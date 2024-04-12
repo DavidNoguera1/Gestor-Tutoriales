@@ -1,0 +1,205 @@
+SQL Attr Comment Foreground<|||>3<|||>8421504
+SQL Attr Comment Background<|||>3<|||>536870911
+SQL Attr Comment Style<|||>3<|||>2
+SQL Attr ConditionalComment Foreground<|||>3<|||>8421504
+SQL Attr ConditionalComment Background<|||>3<|||>536870911
+SQL Attr ConditionalComment Style<|||>3<|||>2
+SQL Attr ConsoleOutput Foreground<|||>3<|||>536870911
+SQL Attr ConsoleOutput Background<|||>3<|||>536870911
+SQL Attr ConsoleOutput Style<|||>3<|||>5
+SQL Attr DataType Foreground<|||>3<|||>128
+SQL Attr DataType Background<|||>3<|||>536870911
+SQL Attr DataType Style<|||>3<|||>1
+SQL Attr DefaultPackages Foreground<|||>3<|||>536870911
+SQL Attr DefaultPackages Background<|||>3<|||>536870911
+SQL Attr DefaultPackages Style<|||>3<|||>1
+SQL Attr DelimitedIdentifier Foreground<|||>3<|||>32896
+SQL Attr DelimitedIdentifier Background<|||>3<|||>536870911
+SQL Attr DelimitedIdentifier Style<|||>3<|||>0
+SQL Attr Exception Foreground<|||>3<|||>536870911
+SQL Attr Exception Background<|||>3<|||>536870911
+SQL Attr Exception Style<|||>3<|||>2
+SQL Attr Function Foreground<|||>3<|||>8388608
+SQL Attr Function Background<|||>3<|||>536870911
+SQL Attr Function Style<|||>3<|||>1
+SQL Attr Identifier Foreground<|||>3<|||>32896
+SQL Attr Identifier Background<|||>3<|||>536870911
+SQL Attr Identifier Style<|||>3<|||>0
+SQL Attr Key Foreground<|||>3<|||>16711680
+SQL Attr Key Background<|||>3<|||>536870911
+SQL Attr Key Style<|||>3<|||>1
+SQL Attr Number Foreground<|||>3<|||>8388736
+SQL Attr Number Background<|||>3<|||>536870911
+SQL Attr Number Style<|||>3<|||>0
+SQL Attr PLSQL-ReservedWord Foreground<|||>3<|||>536870911
+SQL Attr PLSQL-ReservedWord Background<|||>3<|||>536870911
+SQL Attr PLSQL-ReservedWord Style<|||>3<|||>1
+SQL Attr ProcName Foreground<|||>3<|||>536870911
+SQL Attr ProcName Background<|||>3<|||>536870911
+SQL Attr ProcName Style<|||>3<|||>0
+SQL Attr Space Foreground<|||>3<|||>536870911
+SQL Attr Space Background<|||>3<|||>536870911
+SQL Attr Space Style<|||>3<|||>0
+SQL Attr SQLPlus-Command Foreground<|||>3<|||>536870911
+SQL Attr SQLPlus-Command Background<|||>3<|||>536870911
+SQL Attr SQLPlus-Command Style<|||>3<|||>1
+SQL Attr String Foreground<|||>3<|||>32768
+SQL Attr String Background<|||>3<|||>536870911
+SQL Attr String Style<|||>3<|||>0
+SQL Attr Symbol Foreground<|||>3<|||>16711680
+SQL Attr Symbol Background<|||>3<|||>536870911
+SQL Attr Symbol Style<|||>3<|||>0
+SQL Attr TableName Foreground<|||>3<|||>16711935
+SQL Attr TableName Background<|||>3<|||>536870911
+SQL Attr TableName Style<|||>3<|||>0
+SQL Attr Variable Foreground<|||>3<|||>8388736
+SQL Attr Variable Background<|||>3<|||>536870911
+SQL Attr Variable Style<|||>3<|||>0
+HightlightSameTextBackground<|||>3<|||>-16777194
+PreferencesWindowWidth<|||>3<|||>824
+PreferencesWindowHeight<|||>3<|||>608
+ColWidths_frmTableEditor.listColumns<|||>1<|||>58,100,154,90,60,123,134,117,130,140,100,100
+ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
+ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
+ColSort_frmTableEditor.listColumns<|||>1<|||>-1,0
+ColWidths_frmTableEditor.treeIndexes<|||>1<|||>311,100,80,120
+ColsVisible_frmTableEditor.treeIndexes<|||>1<|||>0,1,2,3
+ColPositions_frmTableEditor.treeIndexes<|||>1<|||>0,1,2,3
+ColSort_frmTableEditor.treeIndexes<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>197,80,100,80,80,80
+ColsVisible_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listCheckConstraints<|||>1<|||>200,417
+ColsVisible_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
+ColPositions_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
+ColSort_frmTableEditor.listCheckConstraints<|||>1<|||>-1,0
+querymemoheight<|||>3<|||>741
+ColWidths_MainForm.ListDatabases<|||>1<|||>150,80,50,50,50,50,50,50,50,50,120
+ColsVisible_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColPositions_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColSort_MainForm.ListDatabases<|||>1<|||>0,0
+ColWidths_MainForm.ListVariables<|||>1<|||>160,200,428
+ColsVisible_MainForm.ListVariables<|||>1<|||>0,1,2
+ColPositions_MainForm.ListVariables<|||>1<|||>0,1,2
+ColSort_MainForm.ListVariables<|||>1<|||>0,0
+ColWidths_MainForm.ListStatus<|||>1<|||>160,428,100,100
+ColsVisible_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColPositions_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColSort_MainForm.ListStatus<|||>1<|||>0,0
+ColWidths_MainForm.ListProcesses<|||>1<|||>70,80,80,80,80,50,50,298
+ColsVisible_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColPositions_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColSort_MainForm.ListProcesses<|||>1<|||>0,1
+ColWidths_MainForm.ListCommandStats<|||>1<|||>120,100,100,100,368
+ColsVisible_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColPositions_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColSort_MainForm.ListCommandStats<|||>1<|||>1,1
+ColWidths_MainForm.ListTables<|||>1<|||>120,70,70,120,120,70,100,50,70,70,70,70,70,90,120,70,70,70,50
+ColsVisible_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,18
+ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
+ColSort_MainForm.ListTables<|||>1<|||>0,0
+ColWidths_connform.ListSessions<|||>1<|||>163,50,50,50,50,50,10
+ColsVisible_connform.ListSessions<|||>1<|||>0,1,4,6
+ColPositions_connform.ListSessions<|||>1<|||>0,1,2,3,4,5,6
+ColSort_connform.ListSessions<|||>1<|||>0,0
+MainWinOnMonitor<|||>3<|||>0
+MainWinWidth<|||>3<|||>993
+MainWinHeight<|||>3<|||>530
+LastSessions<|||>1<|||>Unnamed
+LastActiveSession<|||>1<|||>Unnamed
+FileDialogEncoding_MainForm<|||>3<|||>0
+ColWidths_frmRoutineEditor.listParameters<|||>1<|||>50,407,90,70
+ColsVisible_frmRoutineEditor.listParameters<|||>1<|||>0,1,2,3
+ColPositions_frmRoutineEditor.listParameters<|||>1<|||>0,1,2,3
+ColSort_frmRoutineEditor.listParameters<|||>1<|||>-1,0
+MainWinMaximized<|||>3<|||>1
+SQLFile0<|||>1<|||>C:\Users\Sistemas\Documents\SQL-Basico\Computadores\tienda.sql
+SQLFile1<|||>1<|||>C:\Users\Sistemas\Documents\SQL-Basico\Consignataria\consignataria.sql
+SQLFile2<|||>1<|||>C:\Users\Sistemas\Documents\SQL-Basico\Computadores\Consulta #2.sql
+SQLFile3<|||>1<|||>C:\Users\Sistemas\Documents\SQL-Basico\Clinica\Clinica.sql
+Servers\Unnamed\SessionCreated<|||>1<|||>2024-02-21 10:30:37
+Servers\Unnamed\Host<|||>1<|||>127.0.0.1
+Servers\Unnamed\WindowsAuth<|||>3<|||>0
+Servers\Unnamed\CleartextPluginEnabled<|||>3<|||>0
+Servers\Unnamed\User<|||>1<|||>root
+Servers\Unnamed\Password<|||>1<|||>3
+Servers\Unnamed\LoginPrompt<|||>3<|||>0
+Servers\Unnamed\Port<|||>1<|||>3308
+Servers\Unnamed\NetType<|||>3<|||>0
+Servers\Unnamed\Compressed<|||>3<|||>0
+Servers\Unnamed\LocalTimeZone<|||>3<|||>0
+Servers\Unnamed\QueryTimeout<|||>3<|||>30
+Servers\Unnamed\KeepAlive<|||>3<|||>20
+Servers\Unnamed\FullTableStatus<|||>3<|||>1
+Servers\Unnamed\Databases<|||>1<|||>
+Servers\Unnamed\Library<|||>1<|||>libmariadb.dll
+Servers\Unnamed\Comment<|||>1<|||>
+Servers\Unnamed\StartupScriptFilename<|||>1<|||>
+Servers\Unnamed\TreeBackground<|||>3<|||>536870911
+Servers\Unnamed\SSHtunnelActive<|||>3<|||>0
+Servers\Unnamed\SshExecutable<|||>1<|||>plink.exe
+Servers\Unnamed\SSHtunnelHost<|||>1<|||>
+Servers\Unnamed\SSHtunnelHostPort<|||>3<|||>22
+Servers\Unnamed\SSHtunnelUser<|||>1<|||>
+Servers\Unnamed\SSHtunnelPassword<|||>1<|||>4
+Servers\Unnamed\SSHtunnelTimeout<|||>3<|||>4
+Servers\Unnamed\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Unnamed\SSHtunnelPort<|||>3<|||>3307
+Servers\Unnamed\SSL_Active<|||>3<|||>0
+Servers\Unnamed\SSL_Key<|||>1<|||>
+Servers\Unnamed\SSL_Cert<|||>1<|||>
+Servers\Unnamed\SSL_CA<|||>1<|||>
+Servers\Unnamed\SSL_Cipher<|||>1<|||>
+Servers\Unnamed\IgnoreDatabasePattern<|||>1<|||>
+Servers\Unnamed\LogFileDdl<|||>3<|||>0
+Servers\Unnamed\LogFileDml<|||>3<|||>0
+Servers\Unnamed\LogFilePath<|||>1<|||>C:\Users\Sistemas\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\Unnamed\ServerVersionFull<|||>1<|||>10.4.28-MariaDB - mariadb.org binary distribution
+Servers\Unnamed\ConnectCount<|||>3<|||>8
+Servers\Unnamed\ServerVersion<|||>3<|||>100428
+Servers\Unnamed\LastConnect<|||>1<|||>2024-04-12 07:31:49
+Servers\Unnamed\lastUsedDB<|||>1<|||>gestort
+Servers\Unnamed\RefusedCount<|||>3<|||>2
+Servers\Unnamed\QueryHistory\1<|||>1<|||>2024-03-15 07:18:57||0|CREATE DATABASE clinica
+Servers\Unnamed\QueryHistory\2<|||>1<|||>2024-03-15 07:19:05|clinica|0|USE clinica;
+Servers\Unnamed\QueryHistory\3<|||>1<|||>2024-03-15 07:19:14|clinica|16|<{{{><}}}>/*Creando tabla tipoMascota*/<{{{><}}}>CREATE TABLE tipoMascota (<{{{><}}}>  idTipo INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  tipo VARCHAR (150)<{{{><}}}>);
+Servers\Unnamed\QueryHistory\4<|||>1<|||>2024-03-15 07:20:55|clinica|31|/*Insertando datos a tabla tipoMascota*/<{{{><}}}>insert into tipoMascota(tipo)<{{{><}}}>values('Perro'),<{{{><}}}>	  ('Gato'),<{{{><}}}>      ('Loro'),<{{{><}}}>      ('Hamster'),<{{{><}}}>      ('Conejo'),<{{{><}}}>      ('Paloma'),<{{{><}}}>      ('Otro');
+Servers\Unnamed\QueryHistory\5<|||>1<|||>2024-03-15 07:22:31|clinica|0|CREATE TABLE usuario (<{{{><}}}>  idPropietario INT(10) PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  nombres VARCHAR(50),<{{{><}}}>  apellidos VARCHAR(50),<{{{><}}}>  identificacion VARCHAR(20),<{{{><}}}>  direccion VARCHAR(255),<{{{><}}}>  telefono VARCHAR(20),<{{{><}}}>  correoE VARCHAR(100) <{{{><}}}>);
+Servers\Unnamed\QueryHistory\6<|||>1<|||>2024-03-15 07:22:51|clinica|0|/*Insertando datos a la tabla de usuarios*/<{{{><}}}>INSERT INTO usuario (nombres, apellidos, identificacion, direccion, telefono, correoE)<{{{><}}}>VALUES ('Juan Carlos', 'Burgos', '1085', 'Calle 18 No 34-104', '318', 'carlos@gmail'),<{{{><}}}> ('María', 'Santander', '1086', 'Mza 20 casa 3, B/gualcaloma', '317', 'maria@hotmail');
+Servers\Unnamed\QueryHistory\7<|||>1<|||>2024-03-15 07:23:06|clinica|47|CREATE TABLE mascotas (<{{{><}}}>  idMascota INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  nombre VARCHAR(100),<{{{><}}}>  imagen VARCHAR(255),<{{{><}}}>  edad INT (10),<{{{><}}}>  raza VARCHAR(50),<{{{><}}}>  idTipo INT(10),<{{{><}}}>  FOREIGN KEY (idTipo) REFERENCES tipoMascota(idTipo),<{{{><}}}>  idPropietario INT(10),<{{{><}}}>  FOREIGN KEY (idPropietario) REFERENCES usuario(idPropietario)<{{{><}}}>);
+Servers\Unnamed\QueryHistory\8<|||>1<|||>2024-03-15 07:23:14|clinica|16|/*Insertando datos a la tabla de mascotas*/<{{{><}}}>/*Insertando datos a la tabla de mascotas*/<{{{><}}}>INSERT INTO mascotas (nombre, imagen, edad, raza, idTipo, idPropietario)<{{{><}}}>VALUES ('yuya', 'yuya.jpg', 12, 'Labrador', 1, 1),<{{{><}}}>       ('felix', 'felix.jpg', 10, 'Mestizo', 2, 2);
+Servers\Unnamed\QueryHistory\9<|||>1<|||>2024-03-15 07:24:01|clinica|0|SELECT <{{{><}}}>m.nombre AS NombreMascota, m.edad AS Edad, u.nombres AS Propietario, u.telefono AS Telefono, tm.tipo AS Tipo , m.raza AS Raza<{{{><}}}>FROM mascotas m<{{{><}}}>JOIN usuario u ON m.idPropietario = u.idPropietario<{{{><}}}>JOIN tipoMascota tm ON m.idTipo = tm.idTipo;
+Servers\Unnamed\QueryHistory\10<|||>1<|||>2024-03-15 07:33:44|clinica|0|SELECT <{{{><}}}>m.nombre AS NombreMascota, m.edad AS Edad_Meses, u.nombres AS Propietario, u.telefono AS Telefono, tm.tipo AS Tipo , m.raza AS Raza<{{{><}}}>FROM mascotas m<{{{><}}}>JOIN usuario u ON m.idPropietario = u.idPropietario<{{{><}}}>JOIN tipoMascota tm ON m.idTipo = tm.idTipo;
+Servers\Unnamed\QueryHistory\11<|||>1<|||>2024-03-20 07:25:22|tienda|0|DROP DATABASE IF EXISTS tienda;<{{{><}}}>CREATE DATABASE tienda;<{{{><}}}>USE tienda;
+Servers\Unnamed\QueryHistory\13<|||>1<|||>2024-03-20 07:27:59|tienda|47|/*Creando tabla marcas*/<{{{><}}}>CREATE TABLE marcas (<{{{><}}}>  idTipo INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  tipo VARCHAR (30)<{{{><}}}>);<{{{><}}}>
+Servers\Unnamed\QueryHistory\14<|||>1<|||>2024-03-20 07:28:04|tienda|47|/*Insertando datos a tabla marcas*/<{{{><}}}>insert into marcas(tipo)<{{{><}}}>values('Acer'),<{{{><}}}>	   ('Lenovo'),<{{{><}}}>      ('Asus'),<{{{><}}}>      ('DEL'),<{{{><}}}>      ('HP'),<{{{><}}}>      ('MAC');
+Servers\Unnamed\QueryHistory\15<|||>1<|||>2024-03-20 07:30:29|tienda|15|CREATE TABLE categoria (<{{{><}}}>  idTipo INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  tipo VARCHAR (30)<{{{><}}}>);
+Servers\Unnamed\QueryHistory\17<|||>1<|||>2024-03-20 07:37:29|tienda|31|/*Creando tabla marcas*/<{{{><}}}>CREATE TABLE marcas (<{{{><}}}>  idMarca INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  marca VARCHAR (30)<{{{><}}}>);<{{{><}}}>
+Servers\Unnamed\QueryHistory\18<|||>1<|||>2024-03-20 07:37:34|tienda|15|insert into marcas(marca)<{{{><}}}>values('Acer'),<{{{><}}}>	   ('Lenovo'),<{{{><}}}>      ('Asus'),<{{{><}}}>      ('DEL'),<{{{><}}}>      ('HP'),<{{{><}}}>      ('MAC');
+Servers\Unnamed\QueryHistory\19<|||>1<|||>2024-03-20 07:37:39|tienda|16|CREATE TABLE categoria (<{{{><}}}>  idCategoria INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  tipo VARCHAR (30)<{{{><}}}>);
+Servers\Unnamed\QueryHistory\20<|||>1<|||>2024-03-20 07:37:42|tienda|16|insert into categoria(tipo)<{{{><}}}>values('Computador todo en uno'),<{{{><}}}>	   ('Computador de mesa'),<{{{><}}}>      ('Computador portail'),<{{{><}}}>      ('Computador gamer');
+Servers\Unnamed\QueryHistory\16<|||>1<|||>2024-03-20 07:39:15|tienda|15|CREATE TABLE computador (<{{{><}}}>  idComputadores INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  procesador VARCHAR(100),<{{{><}}}>  memoriaRAM VARCHAR(255),<{{{><}}}>  almacenamiento VARCHAR(100),<{{{><}}}>  precio INT(100),<{{{><}}}>  idMarca INT,<{{{><}}}>  FOREIGN KEY (idMarca) REFERENCES marcas(idMarca) ON DELETE CASCADE,<{{{><}}}>  idCategoria INT,<{{{><}}}>  FOREIGN KEY (idCategoria) REFERENCES categoria(idCategoria) ON DELETE CASCADE,<{{{><}}}>  descripcion TEXT<{{{><}}}>);
+Servers\Unnamed\QueryHistory\21<|||>1<|||>2024-03-20 07:41:33|tienda|0|INSERT INTO computador (procesador, memoriaRAM, almacenamiento, precio, idMarca, idCategoria, descripcion)<{{{><}}}>VALUES ('Intel Core i7', '16GB', '512GB SSD', 1200, 1, 2, 'Computador de escritorio potente con procesador Intel Core i7, 16GB de RAM y almacenamiento de 512GB SSD. Ideal para tareas de diseño y desarrollo.');
+Servers\Unnamed\QueryHistory\22<|||>1<|||>2024-03-20 07:43:40|tienda|0|SELECT c.idComputadores, m.marca, c.procesador, c.memoriaRAM, c.almacenamiento, c.precio, cat.tipo AS tipo_computador, c.descripcion<{{{><}}}>FROM computador c<{{{><}}}>JOIN marcas m ON c.idMarca = m.idMarca<{{{><}}}>JOIN categoria cat ON c.idCategoria = cat.idCategoria;<{{{><}}}>
+Servers\Unnamed\QueryHistory\23<|||>1<|||>2024-03-20 07:47:31|tienda|31|CREATE TABLE computador (<{{{><}}}>  idComputadores INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  procesador VARCHAR(100),<{{{><}}}>  memoriaRAM VARCHAR(255),<{{{><}}}>  almacenamiento VARCHAR(100),<{{{><}}}>  precio DECIMAL(10,2),<{{{><}}}>  idMarca INT,<{{{><}}}>  FOREIGN KEY (idMarca) REFERENCES marcas(idMarca) ON DELETE CASCADE,<{{{><}}}>  idCategoria INT,<{{{><}}}>  FOREIGN KEY (idCategoria) REFERENCES categoria(idCategoria) ON DELETE CASCADE,<{{{><}}}>  descripcion TEXT<{{{><}}}>);
+Servers\Unnamed\QueryHistory\24<|||>1<|||>2024-03-20 07:47:41|tienda|0|INSERT INTO computador (procesador, memoriaRAM, almacenamiento, precio, idMarca, idCategoria, descripcion)<{{{><}}}>VALUES ('Intel Core i7', '16GB', '512GB SSD', 1200.00, 1, 2, 'Computador de escritorio potente con procesador Intel Core i7, 16GB de RAM y almacenamiento de 512GB SSD. Ideal para tareas de diseño y desarrollo.');<{{{><}}}>
+Servers\Unnamed\QueryHistory\26<|||>1<|||>2024-03-20 08:07:03|tienda|31|CREATE TABLE computador (<{{{><}}}>  idComputadores INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  procesador VARCHAR(100),<{{{><}}}>  memoriaRAM VARCHAR(255),<{{{><}}}>  almacenamiento VARCHAR(100),<{{{><}}}>  precio DECIMAL(10,2),<{{{><}}}>  idMarca INT,<{{{><}}}>  FOREIGN KEY (idMarca) REFERENCES marcas(idMarca) ON DELETE CASCADE ON UPDATE CASCADE,<{{{><}}}>  idCategoria INT,<{{{><}}}>  FOREIGN KEY (idCategoria) REFERENCES categoria(idCategoria) ON DELETE CASCADE ON UPDATE CASCADE,<{{{><}}}>  descripcion TEXT<{{{><}}}>);
+Servers\Unnamed\QueryHistory\25<|||>1<|||>2024-03-20 08:07:26|tienda|0|INSERT INTO computador (procesador, memoriaRAM, almacenamiento, precio, idMarca, idCategoria, descripcion)<{{{><}}}>VALUES ('Intel Core i7', '16GB', '512GB SSD', 1200.00, 1, 2, 'Computador de escritorio potente con procesador Intel Core i7, 16GB de RAM y almacenamiento de 512GB SSD. Ideal para tareas de diseño y desarrollo.');
+Servers\Unnamed\QueryHistory\27<|||>1<|||>2024-04-05 07:39:38|tienda|0|SELECT c.idComputadores, m.marca, c.procesador, c.memoriaRAM, c.almacenamiento, c.precio AS Precio_Dolares, cat.tipo AS tipo_computador, c.descripcion<{{{><}}}>FROM computador c<{{{><}}}>JOIN marcas m ON c.idMarca = m.idMarca<{{{><}}}>JOIN categoria cat ON c.idCategoria = cat.idCategoria;
+Servers\Unnamed\QueryHistory\28<|||>1<|||>2024-04-05 08:11:05|consignataria|0|SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    c.nombre AS 'Concesionario',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}>
+Servers\Unnamed\QueryHistory\29<|||>1<|||>2024-04-05 08:12:21|consignataria|0| SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    c.nombre AS 'Concesionario',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}><{{{><}}}>
+Servers\Unnamed\QueryHistory\30<|||>1<|||>2024-04-05 08:16:18|consignataria|0| SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica',<{{{><}}}>    c.nombre AS 'Concesionario'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}><{{{><}}}>
+Servers\Unnamed\QueryHistory\31<|||>1<|||>2024-04-05 08:17:04|consignataria|16| SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica',<{{{><}}}>    c.nombre AS 'Concesionario',<{{{><}}}>    c.direccion AS 'Direccion'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}><{{{><}}}>
+Servers\Unnamed\QueryHistory\32<|||>1<|||>2024-04-05 08:23:45|consignataria|0| SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo(Feche de Produccion)',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica',<{{{><}}}>    c.nombre AS 'Concesionario',<{{{><}}}>    c.direccion AS 'Direccion'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}><{{{><}}}>
+Servers\Unnamed\QueryHistory\33<|||>1<|||>2024-04-05 08:23:52|consignataria|0| SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo(Fecha de Produccion)',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica',<{{{><}}}>    c.nombre AS 'Concesionario',<{{{><}}}>    c.direccion AS 'Direccion'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}><{{{><}}}>
+Servers\Unnamed\QueryHistory\34<|||>1<|||>2024-04-05 08:24:00|consignataria|0| SELECT <{{{><}}}>    a.idAutomoviles AS 'ID Automovil',<{{{><}}}>    m.marca AS 'Marca',<{{{><}}}>    a.modelo AS 'Modelo (Fecha de Produccion)',<{{{><}}}>    a.precio AS 'Precio',<{{{><}}}>    a.descuento AS 'Descuento',<{{{><}}}>    a.cilindraje AS 'Cilindraje',<{{{><}}}>    car.caracteristicas AS 'Caracteristicas',<{{{><}}}>    car.precio AS 'Precio Caracteristica',<{{{><}}}>    c.nombre AS 'Concesionario',<{{{><}}}>    c.direccion AS 'Direccion'<{{{><}}}>FROM <{{{><}}}>    Automoviles a<{{{><}}}>JOIN <{{{><}}}>    Marca m ON a.idMarca = m.idMarca<{{{><}}}>JOIN <{{{><}}}>    Concesionario c ON a.idConcesionario = c.idConcesionario<{{{><}}}>JOIN <{{{><}}}>    AutomovilCaracteristica ac ON a.idAutomoviles = ac.idAutomovil<{{{><}}}>JOIN <{{{><}}}>    Caracteristicas car ON ac.idCaracteristica = car.idCaracteristicas;<{{{><}}}><{{{><}}}>
+Servers\Unnamed\QueryHistory\35<|||>1<|||>2024-04-05 08:31:54||15|DELIMITER //<{{{><}}}>CREATE PROCEDURE InsertarMarca (<{{{><}}}>    IN nombreMarca VARCHAR(100)<{{{><}}}>)<{{{><}}}>BEGIN<{{{><}}}>    INSERT INTO Marca (marca) VALUES (nombreMarca);<{{{><}}}>END //<{{{><}}}>DELIMITER ;
+Servers\Unnamed\QueryHistory\36<|||>1<|||>2024-04-05 08:34:47|consignataria|16|CALL `InsertarMarca`('BMW')
+Servers\Unnamed\QueryHistory\37<|||>1<|||>2024-04-05 08:36:48|tienda|0|USE tienda;
+Servers\Unnamed\QueryHistory\12<|||>1<|||>2024-04-05 08:37:12|tienda|16|DELIMITER //<{{{><}}}>CREATE PROCEDURE InsertarMarca (<{{{><}}}>    IN nombreMarca VARCHAR(100)<{{{><}}}>)<{{{><}}}>BEGIN<{{{><}}}>    INSERT INTO marcas (marca) VALUES (nombreMarca);<{{{><}}}>END //<{{{><}}}>DELIMITER ;
+Servers\Unnamed\QueryHistory\38<|||>1<|||>2024-04-05 08:37:33|tienda|0|CALL `InsertarMarca`('AlienWare')
+Servers\Unnamed\QueryHistory\39<|||>1<|||>2024-04-12 07:47:06|gestort|16|CREATE TABLE tutoriales (<{{{><}}}>  idTutorial INT PRIMARY KEY AUTO_INCREMENT NOT NULL,<{{{><}}}>  titulo VARCHAR(100) NOT NULL,<{{{><}}}>  prioridad INT NOT NULL,<{{{><}}}>  url TEXT NOT NULL,<{{{><}}}>  estado ENUM('Revisado', 'Por revisar') DEFAULT 'Por revisar', -- Columna para el estado del tutorial<{{{><}}}>  idCategoria INT NOT NULL,<{{{><}}}>  FOREIGN KEY (idCategoria) REFERENCES categorias(idCategoria) ON DELETE CASCADE ON UPDATE CASCADE<{{{><}}}>);
+Servers\Unnamed\QueryHistory\40<|||>1<|||>2024-04-12 07:47:34|gestort|15|INSERT INTO tutoriales (titulo, prioridad, url, idCategoria) <{{{><}}}>VALUES ('Introducción a la lógica de programación', 9, 'https://www.hostgator.mx/blog/logica-de-programacion-primer-paso/', 1),<{{{><}}}>       ('Desarrollo de aplicaciones con Flutter', 7, 'https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=es-419#0', 2);
+Servers\Unnamed\QueryHistory\42<|||>1<|||>2024-04-12 07:56:03|gestort|15|CALL `InsertarTutorial`('Ciencia de datos con Python', '7', 'https://www.tutorialspoint.com/python_data_science/index.htm', '5')
+Servers\Unnamed\QueryHistory\43<|||>1<|||>2024-04-12 08:35:07|gestort|15|DELIMITER //<{{{><}}}><{{{><}}}>CREATE PROCEDURE InsertarTutorial (<{{{><}}}>    IN p_titulo VARCHAR(100),<{{{><}}}>    IN p_prioridad INT,<{{{><}}}>    IN p_url TEXT,<{{{><}}}>    IN p_idCategoria INT<{{{><}}}>)<{{{><}}}>BEGIN<{{{><}}}>    INSERT INTO tutoriales (titulo, prioridad, url, idCategoria)<{{{><}}}>    VALUES (p_titulo, p_prioridad, p_url, p_idCategoria);<{{{><}}}>END //<{{{><}}}><{{{><}}}>DELIMITER ;
