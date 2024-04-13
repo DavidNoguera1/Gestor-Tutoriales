@@ -13,9 +13,9 @@ import java.sql.DriverManager;
  */
 public class gestionarTutoriales {
     public Connection establecerConexion(){
-        String url = "jdbc:mysql://localhost:3308/gestort?serverTimeZone=utc";
+        String url = "jdbc:mysql://localhost:3306/gestort?serverTimeZone=utc";
         String user = "root";
-        String password = "";
+        String password = "admin";
         Connection conn = null;
         
         try {

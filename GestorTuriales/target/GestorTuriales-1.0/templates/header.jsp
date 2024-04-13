@@ -8,7 +8,7 @@
     <title>Gestor de Tutoriales</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="templates/styles.css">
 </head>
 <body>
 
@@ -21,8 +21,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="index.jsp">Inicio <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listaT.jsp">Tutoriales <span class="sr-only"></span></a>
             </li>
         </ul>
     </div>

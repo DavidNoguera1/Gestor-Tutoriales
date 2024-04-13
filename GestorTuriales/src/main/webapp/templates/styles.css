@@ -1,0 +1,30 @@
+body {
+    background-color: #e8f0f8;
+    background-image: linear-gradient(
+        45deg,
+        rgba(224, 232, 240, 0.3) 25%,
+        rgba(180, 200, 220, 0.5) 50%,
+        rgba(224, 232, 240, 0.3) 75%,
+        transparent 75%
+        );
+    background-size: 40px 40px;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -40px -40px;
+    }
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
