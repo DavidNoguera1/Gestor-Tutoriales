@@ -28,3 +28,8 @@ body {
 .btn-primary {
     background-color: #007bff;
 }
+
+.btn i {
+        font-size: 18px; /* Ajusta este valor según sea necesario */
+        margin-right: 5px; /* Espacio entre el icono y el texto del botón */
+    }

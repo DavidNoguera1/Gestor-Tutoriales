@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS gestorT;
-CREATE DATABASE gestorT CHARACTER SET utf8mb4;
-USE gestorT;
+DROP DATABASE IF EXISTS gestorTT;
+CREATE DATABASE gestorTT CHARACTER SET utf8mb4;
+USE gestorTT;
 
 /*Creando tabla categorias*/
 CREATE TABLE categorias (
@@ -65,4 +65,4 @@ DELIMITER ;
 INSERT INTO tutoriales (titulo, prioridad, url, idCategoria) 
 VALUES ('I am error', 1, 'https://es.wikipedia.org/wiki/I_am_Error', 1);
 
-CALL eliminarTutorial(3);
+

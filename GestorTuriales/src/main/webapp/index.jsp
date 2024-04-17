@@ -10,7 +10,7 @@
 <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card bg-dark text-light p-3">
         <h1 class="text-center">Formulario para agregar tutoriales</h1>
-        <form action="SvAgregarTutorial" method="POST">
+        <form action="${pageContext.request.contextPath}/SvAgregarTutorial" method="POST">
             <div class="mb-3">
                 <label for="titulo" class="form-label text-light">Título</label>
                 <input type="text" name="titulo" class="form-control" id="titulo">
@@ -49,6 +49,7 @@
                 <button type="submit" class="btn btn-primary">Agregar</button>
             </div>
         </form>
+
 
 
     </div>

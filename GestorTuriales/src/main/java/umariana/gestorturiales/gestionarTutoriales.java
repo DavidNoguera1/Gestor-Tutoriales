@@ -4,24 +4,27 @@
  */
 package umariana.gestorturiales;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  *
  * @author Sistemas
  */
 public class gestionarTutoriales {
-    public Connection establecerConexion(){
-        String url = "jdbc:mysql://localhost:3306/gestort?serverTimeZone=utc";
-        String user = "root";
-        String password = "admin";
+
+    public Connection establecerConexion() {
+        String url = "jdbc:mysql://localhost:3308/gestorTT?serverTimeZone=utc";
+        String user = "root"; // Nombre de usuario correcto
+        String password = ""; // Contraseña de tu base de datos, si la tienes
         Connection conn = null;
-        
+
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection(url,user,password);
-            if (conn!=null) {
+            conn = DriverManager.getConnection(url, user, password);
+            if (conn != null) {
                 System.out.println("Conexion exitosa");
             }
         } catch (Exception e) {
@@ -29,7 +32,52 @@ public class gestionarTutoriales {
         }
         return conn;
     }
-    public void agregarProducto(){
-        
+
+    public void agregarTutorial(String titulo, int prioridad, String url, int categoria) throws SQLException {
+        Connection conn = null;
+        CallableStatement stmt = null;
+
+        try {
+            conn = establecerConexion();
+            if (conn != null) {
+                stmt = conn.prepareCall("{call InsertarTutorial(?, ?, ?, ?)}");
+                stmt.setString(1, titulo);
+                stmt.setInt(2, prioridad);
+                stmt.setString(3, url);
+                stmt.setInt(4, categoria);
+                stmt.execute();
+            }
+        } finally {
+            // Cerrar recursos
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
     }
+
+    public void eliminarTutorial(int idTutorial) throws SQLException {
+        Connection conn = null;
+        CallableStatement stmt = null;
+
+        try {
+            conn = establecerConexion();
+            if (conn != null) {
+                stmt = conn.prepareCall("{call eliminarTutorial(?)}");
+                stmt.setInt(1, idTutorial);
+                stmt.execute();
+            }
+        } finally {
+            // Cerrar recursos
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
+    }
+
 }
