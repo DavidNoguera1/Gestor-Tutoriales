@@ -28,7 +28,40 @@ public class SvAgregarTutorial extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // Establecer la conexión a la base de datos
+        Connection conn = gestionar.establecerConexion();
 
+        if (conn != null) {
+            try {
+                // Llamar al procedimiento almacenado
+                CallableStatement stmt = conn.prepareCall("{call eliminarTutorial(?)}");
+
+                // Obtener el parámetro de la URL (método GET)
+                int idTutorial = Integer.parseInt(request.getParameter("idTutorial"));
+
+                // Establecer parámetros del procedimiento almacenado
+                stmt.setInt(1, idTutorial);
+
+                // Ejecutar el procedimiento almacenado
+                stmt.execute();
+
+                // Cerrar la conexión
+                conn.close();
+
+                // Redirigir a alguna página de éxito o mostrar un mensaje de éxito
+                response.sendRedirect("listaT.jsp"); // Redirigir a una página de éxito
+
+                System.out.println("Tutorial eliminado exitosamente.");
+            } catch (SQLException e) {
+                // Manejar cualquier error de SQL
+                e.printStackTrace(); // Esto imprimirá la traza de la excepción en la consola del servidor
+                // Puedes manejar el error de otra manera, como mostrar un mensaje de error en la página
+                response.getWriter().println("Error al eliminar el tutorial. Por favor, inténtelo de nuevo."); // Esto mostrará un mensaje de error en la página
+            }
+        } else {
+            // Manejar el caso en que no se pueda obtener una conexión a la base de datos
+            response.getWriter().println("No se pudo establecer una conexión a la base de datos."); // Esto mostrará un mensaje de error en la página
+        }
     }
 
     @Override
@@ -62,7 +95,7 @@ public class SvAgregarTutorial extends HttpServlet {
 
                 // Redirigir a alguna página de éxito o mostrar un mensaje de éxito
                 response.sendRedirect("index.jsp"); // Redirigir a una página de éxito
-                
+
                 System.out.println("Conexion exitosa");
             } catch (SQLException e) {
                 // Manejar cualquier error de SQL

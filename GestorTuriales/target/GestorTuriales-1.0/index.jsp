@@ -11,13 +11,13 @@
     <div class="card bg-dark text-light p-3">
         <h1 class="text-center">Formulario para agregar tutoriales</h1>
         <form action="SvAgregarTutorial" method="POST">
-            <div class="form-group">
-                <label for="titulo" class="text-light">Título</label>
+            <div class="mb-3">
+                <label for="titulo" class="form-label text-light">Título</label>
                 <input type="text" name="titulo" class="form-control" id="titulo">
             </div>
-            <div class="form-group">
-                <label for="prioridad" class="text-light">Prioridad</label>
-                <select name="prioridad" class="form-control" id="prioridad">
+            <div class="mb-3">
+                <label for="prioridad" class="form-label text-light">Prioridad</label>
+                <select name="prioridad" class="form-select" id="prioridad">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -30,13 +30,13 @@
                     <option value="10">10</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="url" class="text-light">URL</label>
+            <div class="mb-3">
+                <label for="url" class="form-label text-light">URL</label>
                 <input type="text" name="url" class="form-control" id="url">
             </div>
-            <div class="form-group">
-                <label for="categoria" class="text-light">Categoría</label>
-                <select name="categoria" class="form-control" id="categoria">
+            <div class="mb-3">
+                <label for="categoria" class="form-label text-light">Categoría</label>
+                <select name="categoria" class="form-select" id="categoria">
                     <option value="1">Logica de programacion</option>
                     <option value="2">Flutter</option>
                     <option value="3">Node.js</option>
@@ -45,10 +45,11 @@
                     <option value="6">MySQL</option>
                 </select>
             </div>
-            <div class="text-center">
-                <input type="submit" value="Agregar" class="btn btn-primary">
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Agregar</button>
             </div>
         </form>
+
 
     </div>
 </div>

@@ -51,3 +51,18 @@ END //
 
 DELIMITER ;
 
+DELIMITER //
+
+CREATE PROCEDURE eliminarTutorial (
+    IN p_idTutorial INT
+)
+BEGIN
+    DELETE FROM tutoriales WHERE idTutorial = p_idTutorial;
+END //
+
+DELIMITER ;
+
+INSERT INTO tutoriales (titulo, prioridad, url, idCategoria) 
+VALUES ('I am error', 1, 'https://es.wikipedia.org/wiki/I_am_Error', 1);
+
+CALL eliminarTutorial(3);
