@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS gestorTT;
-CREATE DATABASE gestorTT CHARACTER SET utf8mb4;
-USE gestorTT;
+DROP DATABASE IF EXISTS gestor;
+CREATE DATABASE gestor CHARACTER SET utf8mb4;
+USE gestor;
 
 /*Creando tabla categorias*/
 CREATE TABLE categorias (
@@ -18,8 +18,11 @@ values('Logica de programacion'),
       ('Python'),
       ('MySQL');
       
+insert into categorias(categoria)
+values('PHP');
       
       
+ /*Creando tabla tutoriales*/     
 CREATE TABLE tutoriales (
   idTutorial INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
   titulo VARCHAR(100) NOT NULL,
@@ -36,8 +39,13 @@ VALUES ('Introducción a la lógica de programación', 9, 'https://www.hostgator
        ('Desarrollo de aplicaciones con Flutter', 7, 'https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=es-419#0', 2);
 
 
-DELIMITER //
 
+
+/* .............Creacion de procedimientos y vistas............ */
+
+ /*Creando procedimiento de insercion de tutoriales*/   
+
+DELIMITER //
 CREATE PROCEDURE InsertarTutorial (
     IN p_titulo VARCHAR(100),
     IN p_prioridad INT,
@@ -48,20 +56,19 @@ BEGIN
     INSERT INTO tutoriales (titulo, prioridad, url, idCategoria)
     VALUES (p_titulo, p_prioridad, p_url, p_idCategoria);
 END //
-
 DELIMITER ;
 
+ /*Creando procedimiento de eliminacion de tutoriales*/   
 DELIMITER //
-
 CREATE PROCEDURE eliminarTutorial (
     IN p_idTutorial INT
 )
 BEGIN
     DELETE FROM tutoriales WHERE idTutorial = p_idTutorial;
 END //
-
 DELIMITER ;
 
+ /*Dato de prueba para borrar o eliminar*/   
 INSERT INTO tutoriales (titulo, prioridad, url, idCategoria) 
 VALUES ('I am error', 1, 'https://es.wikipedia.org/wiki/I_am_Error', 1);
 

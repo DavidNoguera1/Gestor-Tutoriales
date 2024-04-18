@@ -7,6 +7,8 @@ package umariana.gestorturiales;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -16,9 +18,9 @@ import java.sql.SQLException;
 public class gestionarTutoriales {
 
     public Connection establecerConexion() {
-        String url = "jdbc:mysql://localhost:3308/gestorTT?serverTimeZone=utc";
+        String url = "jdbc:mysql://localhost:3306/gestor?serverTimeZone=utc";
         String user = "root"; // Nombre de usuario correcto
-        String password = ""; // Contraseña de tu base de datos, si la tienes
+        String password = "admin"; // Contraseña de tu base de datos, si la tienes
         Connection conn = null;
 
         try {
@@ -79,5 +81,32 @@ public class gestionarTutoriales {
             }
         }
     }
+    
+    // Función para editar un tutorial
+    public void editarTutorial(int idTutorial, String titulo, int prioridad, String url, int categoria) throws SQLException {
+        Connection conn = null;
+        CallableStatement stmt = null;
 
+        try {
+            conn = establecerConexion();
+            if (conn != null) {
+                stmt = conn.prepareCall("{call editarTutorial(?, ?, ?, ?, ?)}");
+                stmt.setInt(1, idTutorial);
+                stmt.setString(2, titulo);
+                stmt.setInt(3, prioridad);
+                stmt.setString(4, url);
+                stmt.setInt(5, categoria);
+                stmt.execute();
+            }
+        } finally {
+            // Cerrar recursos
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
+    }
+   
 }
