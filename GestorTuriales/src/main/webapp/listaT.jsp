@@ -6,18 +6,52 @@
 
 <%@include file= "templates/header.jsp" %>
 
+<%
+// Declarar las variables fuera del bloque try
+    Connection conn = null;
+    PreparedStatement stmt = null;
+    ResultSet rs = null;
+%>
 <div class="container p-4 d-flex justify-content-center">
     <div class="col-md-8">
         <table id="tutorialesTable" class="table table-bordered table-dark">
             <thead>
-                
+            
             <div class="input-group mb-3">
                 <div class="form-outline" data-mdb-input-init>
                     <input id="search-focus" type="search" id="form1" class="form-control" 
                            placeholder="Buscar por titulo" />
                 </div>
 
+                <div class="input-group-append" style="margin-left: 10px;">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorías
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding: 10px;">
+                        <li><a class="dropdown-item" href="#" data-categoria="0">Todas las Categorías</a></li>
+                            <%
+                                try {
+                                    gestionarTutoriales gestionar = new gestionarTutoriales();
+                                    conn = gestionar.establecerConexion();
+                                    String sql = "SELECT idCategoria, categoria FROM categorias";
+                                    stmt = conn.prepareStatement(sql);
+                                    rs = stmt.executeQuery();
+                                    while (rs.next()) {
+                                        int idCategoria = rs.getInt("idCategoria");
+                                        String categoria = rs.getString("categoria");
+                            %>
+                        <li><a class="dropdown-item" href="#" data-categoria="<%= idCategoria%>"><%= categoria%></a></li>
+                            <%
+                                    }
+                                } catch (SQLException e) {
+                                    e.printStackTrace();
+                                }
+                            %>
+                    </ul>
+                </div>
             </div>
+
+
             <tr>
                 <th>ID</th>
                 <th>Titulo</th>
@@ -30,11 +64,8 @@
             </thead>
             <tbody>
                 <%
-                    // Declarar las variables fuera del bloque try
-                    Connection conn = null;
-                    PreparedStatement stmt = null;
-                    ResultSet rs = null;
                     try {
+
                         // Obtener la conexión a la base de datos
                         gestionarTutoriales gestionar = new gestionarTutoriales();
                         conn = gestionar.establecerConexion();
@@ -104,8 +135,6 @@
                 %>
             </tbody>
         </table>
-
-
     </div>
 </div>
 
@@ -131,6 +160,30 @@
     });
 </script>
 
+<script>
+    $(document).ready(function () {
+        // Manejar el cambio de opción en el select de categoría
+        $('#categoriaSelect').on('change', function () {
+            var categoriaId = $(this).val();
+
+            // Mostrar todas las filas si la opción seleccionada es 0 (Todas las Categorías)
+            if (categoriaId === '0') {
+                $('tbody tr').show();
+                return;
+            }
+
+            // Filtrar las filas de la tabla basándonos en la categoría seleccionada
+            $('tbody tr').each(function () {
+                var categoria = $(this).find('td:eq(5)').text(); // Cambiar el índice según la posición de la columna de categoría
+                if (categoria !== categoriaId) {
+                    $(this).hide();
+                } else {
+                    $(this).show();
+                }
+            });
+        });
+    });
+</script>
 
 
 <%@include file= "templates/scriptModales.jsp" %>

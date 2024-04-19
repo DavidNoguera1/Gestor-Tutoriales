@@ -18,9 +18,9 @@ import java.sql.SQLException;
 public class gestionarTutoriales {
 
     public Connection establecerConexion() {
-        String url = "jdbc:mysql://localhost:3306/gestor?serverTimeZone=utc";
+        String url = "jdbc:mysql://localhost:3308/gestor?serverTimeZone=utc";
         String user = "root"; // Nombre de usuario correcto
-        String password = "admin"; // Contraseña de tu base de datos, si la tienes
+        String password = ""; // Contraseña de tu base de datos, si la tienes
         Connection conn = null;
 
         try {
@@ -81,7 +81,7 @@ public class gestionarTutoriales {
             }
         }
     }
-    
+
     // Función para editar un tutorial
     public void editarTutorial(int idTutorial, String titulo, int prioridad, String url, int categoria) throws SQLException {
         Connection conn = null;
@@ -108,5 +108,27 @@ public class gestionarTutoriales {
             }
         }
     }
-   
+
+    public void agregarCategoria(String nuevaCategoria) throws SQLException {
+        Connection conn = null;
+        PreparedStatement stmt = null;
+
+        try {
+            conn = establecerConexion();
+            if (conn != null) {
+                String sql = "INSERT INTO categorias (categoria) VALUES (?)";
+                stmt = conn.prepareStatement(sql);
+                stmt.setString(1, nuevaCategoria);
+                stmt.executeUpdate();
+            }
+        } finally {
+            // Cerrar recursos
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
+    }
 }

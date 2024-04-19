@@ -5,6 +5,7 @@
     Esta pagina no visible almacena modales y scripts a empleaser en listasT.jsp 
 --%>
 
+<%@page import="umariana.gestorturiales.gestionarTutoriales"%>
 <script>
     function confirmarEliminacion(idTutorial) {
         var confirmacion = confirm("¿Está seguro de que desea borrar este tutorial?");

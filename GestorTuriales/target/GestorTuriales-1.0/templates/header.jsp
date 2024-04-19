@@ -43,6 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="listaT.jsp">Tutoriales <span class="sr-only"></span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorias.jsp">Categoria <span class="sr-only"></span></a>
+                    </li>
                 </ul>
             </div>
         </nav>

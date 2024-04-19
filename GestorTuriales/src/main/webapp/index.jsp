@@ -43,41 +43,39 @@
             <div class="mb-3">
                 <label for="categoria" class="form-label text-light">Categoría</label>
                 <select name="categoria" class="form-select" id="categoria">
-                    <% 
-                    try {
-                        Connection conn = null;
-                        PreparedStatement stmt = null;
-                        ResultSet rs = null;
-        
-                        gestionarTutoriales gestionar = new gestionarTutoriales();
-                        conn = gestionar.establecerConexion();
-        
-                        String sql = "SELECT idCategoria, categoria FROM categorias";
-                        stmt = conn.prepareStatement(sql);
-                        rs = stmt.executeQuery();
-        
-                        while (rs.next()) {
-                            int idCategoria = rs.getInt("idCategoria");
-                            String categoria = rs.getString("categoria");
+                    <%
+                        try {
+                            Connection conn = null;
+                            PreparedStatement stmt = null;
+                            ResultSet rs = null;
+
+                            gestionarTutoriales gestionar = new gestionarTutoriales();
+                            conn = gestionar.establecerConexion();
+
+                            String sql = "SELECT idCategoria, categoria FROM categorias";
+                            stmt = conn.prepareStatement(sql);
+                            rs = stmt.executeQuery();
+
+                            while (rs.next()) {
+                                int idCategoria = rs.getInt("idCategoria");
+                                String categoria = rs.getString("categoria");
                     %>
-                    <option value="<%= idCategoria %>"><%= categoria %></option>
-                    <% 
+                    <option value="<%= idCategoria%>"><%= categoria%></option>
+                    <%
+                            }
+                        } catch (SQLException e) {
+                            e.printStackTrace();
                         }
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
                     %>
                 </select>
-
             </div>
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-primary">Agregar</button>
             </div>
         </form>
-
-
-
     </div>
+
 </div>
+
 
 <%@include file= "templates/footer.jsp" %>
