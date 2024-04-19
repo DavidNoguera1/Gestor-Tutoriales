@@ -8,17 +8,25 @@
 
 <div class="container p-4 d-flex justify-content-center">
     <div class="col-md-8">
-        <table class="table table-bordered table-dark">
+        <table id="tutorialesTable" class="table table-bordered table-dark">
             <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Titulo</th>
-                    <th>Prioridad</th>
-                    <th>Ver</th>
-                    <th>Estado</th>
-                    <th>Categoria</th>
-                    <th>Acciones</th>
-                </tr>
+                
+            <div class="input-group mb-3">
+                <div class="form-outline" data-mdb-input-init>
+                    <input id="search-focus" type="search" id="form1" class="form-control" 
+                           placeholder="Buscar por titulo" />
+                </div>
+
+            </div>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Prioridad</th>
+                <th>Ver</th>
+                <th>Estado</th>
+                <th>Categoria</th>
+                <th>Acciones</th>
+            </tr>
             </thead>
             <tbody>
                 <%
@@ -100,6 +108,28 @@
 
     </div>
 </div>
+
+<!-- Script de filtrado de búsqueda -->
+<script>
+    $(document).ready(function () {
+        // Manejar el evento de entrada en la caja de búsqueda
+        $('#search-focus').on('input', function () {
+            var searchTerm = $(this).val().toLowerCase();
+
+            // Filtrar las filas de la tabla basándonos en el término de búsqueda
+            $('tbody tr').each(function () {
+                var titulo = $(this).find('td:eq(1)').text().toLowerCase(); // Corrección aquí
+
+                // Mostrar u ocultar la fila según si coincide con el término de búsqueda
+                if (titulo.includes(searchTerm)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>
 
 
 

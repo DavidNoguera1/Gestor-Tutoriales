@@ -41,7 +41,7 @@ VALUES ('Introducción a la lógica de programación', 9, 'https://www.hostgator
 
 
 
-/* .............Creacion de procedimientos y vistas............ */
+/* .............Creacion de procedimientos............ */
 
  /*Creando procedimiento de insercion de tutoriales*/   
 
@@ -68,7 +68,30 @@ BEGIN
 END //
 DELIMITER ;
 
- /*Dato de prueba para borrar o eliminar*/   
+DELIMITER //
+
+ /*Creando procedimiento edicion de tutoriales*/   
+CREATE PROCEDURE editarTutorial (
+    IN p_idTutorial INT,
+    IN p_titulo VARCHAR(100),
+    IN p_prioridad INT,
+    IN p_url TEXT,
+    IN p_idCategoria INT
+)
+BEGIN
+    UPDATE tutoriales
+    SET titulo = p_titulo,
+        prioridad = p_prioridad,
+        url = p_url,
+        idCategoria = p_idCategoria
+    WHERE idTutorial = p_idTutorial;
+END //
+
+DELIMITER ;
+
+
+
+ /*Dato de prueba para editar o eliminar*/   
 INSERT INTO tutoriales (titulo, prioridad, url, idCategoria) 
 VALUES ('I am error', 1, 'https://es.wikipedia.org/wiki/I_am_Error', 1);
 
