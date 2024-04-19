@@ -72,11 +72,8 @@ DELIMITER //
 
  /*Creando procedimiento edicion de tutoriales*/   
 CREATE PROCEDURE editarTutorial (
-    IN p_idTutorial INT,
-    IN p_titulo VARCHAR(100),
-    IN p_prioridad INT,
-    IN p_url TEXT,
-    IN p_idCategoria INT
+
+    IN p_titulo VARCHAR(30)
 )
 BEGIN
     UPDATE tutoriales
@@ -89,6 +86,16 @@ END //
 
 DELIMITER ;
 
+ /*Creando procedimiento de insercion de categorias*/   
+DELIMITER //
+CREATE PROCEDURE InsertarCategoria (
+    IN p_categoria VARCHAR(30)
+)
+BEGIN
+    INSERT INTO categorias (categoria)
+    VALUES (p_categoria);
+END //
+DELIMITER ;
 
 
  /*Dato de prueba para editar o eliminar*/   
