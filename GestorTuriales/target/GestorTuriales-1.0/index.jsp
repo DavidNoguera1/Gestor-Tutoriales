@@ -44,11 +44,13 @@
                 <label for="categoria" class="form-label text-light">Categoría</label>
                 <select name="categoria" class="form-select" id="categoria">
                     <%
-                        try {
+                        
                             Connection conn = null;
                             PreparedStatement stmt = null;
                             ResultSet rs = null;
-
+                        
+                        try {
+                            
                             gestionarTutoriales gestionar = new gestionarTutoriales();
                             conn = gestionar.establecerConexion();
 
