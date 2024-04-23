@@ -19,11 +19,11 @@
         <form action="${pageContext.request.contextPath}/SvAgregarTutorial" method="POST">
             <div class="mb-3">
                 <label for="titulo" class="form-label text-light">Título</label>
-                <input type="text" name="titulo" class="form-control" id="titulo" required>
+                <input type="text" name="titulo" class="form-control" id="titulo">
             </div>
             <div class="mb-3">
                 <label for="prioridad" class="form-label text-light">Prioridad</label>
-                <select name="prioridad" class="form-select" id="prioridad" required>
+                <select name="prioridad" class="form-select" id="prioridad">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -38,11 +38,11 @@
             </div>
             <div class="mb-3">
                 <label for="url" class="form-label text-light">URL</label>
-                <input type="text" name="url" class="form-control" id="url" required>
+                <input type="text" name="url" class="form-control" id="url">
             </div>
             <div class="mb-3">
                 <label for="categoria" class="form-label text-light">Categoría</label>
-                <select name="categoria" class="form-select" id="categoria" required >
+                <select name="categoria" class="form-select" id="categoria">
                     <%
                         
                             Connection conn = null;
