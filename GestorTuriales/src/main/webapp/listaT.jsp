@@ -94,7 +94,7 @@
                     <td><%= estado%></td>
                     <td><%= categoria%></td>
                     <td>
-                        <!-- Botón de edición -->
+                        
                         <div class="btn-group" role="group" aria-label="Acciones">
                             <!-- Botón de edición -->
                             <a href="#" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" title="Editar"
@@ -106,6 +106,7 @@
                                data-categoria="<%= categoria%>">
                                 <i class="fas fa-edit"></i> 
                             </a>
+                             <!-- Botón de borrado -->
                             <a href="#" title="Eliminar" class="btn btn-danger btn-sm" onclick="confirmarEliminacion(<%= idTutorial%>)">
                                 <i class="fas fa-trash"></i> 
                             </a>

@@ -26,9 +26,24 @@ public class SvCategoria extends HttpServlet {
     gestionarTutoriales gestionar = new gestionarTutoriales();
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Obtener el parámetro de la URL (método GET)
+        int idCategoria = Integer.parseInt(request.getParameter("idCategoria"));
 
+        try {
+            // Llamar al método eliminarTutorial de la clase gestionarTutoriales
+            gestionar.eliminarCategoria(idCategoria);
+
+            // Redirigir a listaT.jsp después de eliminar el tutorial
+            response.sendRedirect(request.getContextPath() + "/categorias.jsp");
+
+            System.out.println("Categoria eliminado exitosamente.");
+        } catch (SQLException e) {
+            // Manejar cualquier error de SQL
+            e.printStackTrace(); // Esto imprimirá la traza de la excepción en la consola del servidor
+            // Puedes manejar el error de otra manera, como mostrar un mensaje de error en la página
+            response.getWriter().println("Error al eliminar la categoria. Por favor, inténtelo de nuevo."); // Esto mostrará un mensaje de error en la página
+        }
     }
 
     @Override

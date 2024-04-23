@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import umariana.gestorturiales.gestionarTutoriales;
 
-
 /**
  *
  * @author PC
@@ -24,19 +23,32 @@ import umariana.gestorturiales.gestionarTutoriales;
 @WebServlet(name = "SvEditar", urlPatterns = {"/SvEditar"})
 public class SvEditar extends HttpServlet {
 
-   gestionarTutoriales gestionar = new gestionarTutoriales();
-   
-    @Override
+    gestionarTutoriales gestionar = new gestionarTutoriales();
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+        // Obtener los parámetros de la solicitud HTTP
+        int idCategoria = Integer.parseInt(request.getParameter("idCategoria"));
+        String nuevoNombre = request.getParameter("nuevoNombre");
+
+        try {
+            // Llamar a la función editarCategoria
+            gestionar.editarCategoria(idCategoria, nuevoNombre);
+
+            // Redirigir a la página de categorías después de la edición
+            response.sendRedirect(request.getContextPath() + "/categorias.jsp");
+        } catch (SQLException e) {
+            // Manejar cualquier error de SQL
+            e.printStackTrace();
+            // Enviar una respuesta de error al cliente
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al editar la categoría.");
+        }
     }
 
-    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       String titulo = request.getParameter("titulo");
+        String titulo = request.getParameter("titulo");
         int prioridad = Integer.parseInt(request.getParameter("prioridad"));
         String url = request.getParameter("url");
         int categoria = Integer.parseInt(request.getParameter("categoria"));
@@ -45,13 +57,13 @@ public class SvEditar extends HttpServlet {
         try {
             gestionar.editarTutorial(idTutorial, titulo, prioridad, url, categoria);
             // Redirigir a la página de éxito o mostrar un mensaje de éxito
-            
+
             response.sendRedirect(request.getContextPath() + "/listaT.jsp");
 
             System.out.println("Tutorial editado exitosamente.");
-            
+
         } catch (SQLException e) {
-            
+
             // Manejar cualquier error de SQL
             e.printStackTrace(); // Esto imprimirá la traza de la excepción en la consola del servidor
             // Puedes manejar el error de otra manera, como mostrar un mensaje de error en la página
@@ -59,7 +71,6 @@ public class SvEditar extends HttpServlet {
         }
     }
 
-    
     @Override
     public String getServletInfo() {
         return "Short description";

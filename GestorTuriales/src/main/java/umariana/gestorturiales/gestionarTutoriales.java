@@ -14,6 +14,8 @@ import java.sql.SQLException;
 /**
  *
  * @author Sistemas
+ * ESTA CLASE GESTIONA LA CONEXION A LA CONEXION A LA DB GESTOR Y SUS TABLAS CATEGORIA Y TUTORIALES 
+ * SE ADAPTAN PROCEDIMIENTOS ALMACENADOS COMO FUNCIONES
  */
 public class gestionarTutoriales {
 
@@ -108,7 +110,8 @@ public class gestionarTutoriales {
             }
         }
     }
-
+    
+    // Función para agregar una categoria
     public void agregarCategoria(String nuevaCategoria) throws SQLException {
         Connection conn = null;
         PreparedStatement stmt = null;
@@ -121,6 +124,70 @@ public class gestionarTutoriales {
                 stmt.setString(1, nuevaCategoria);
                 stmt.executeUpdate();
             }
+        } finally {
+            // Cerrar recursos
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
+    }
+    
+    // Función para eliminar una categoria
+    public void eliminarCategoria(int idCategoria) throws SQLException {
+        Connection conn = null;
+        CallableStatement stmt = null;
+
+        try {
+            conn = establecerConexion();
+            if (conn != null) {
+                stmt = conn.prepareCall("{call eliminarCategoria(?)}");
+                stmt.setInt(1, idCategoria);
+                stmt.execute();
+            }
+        } finally {
+            // Cerrar recursos
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
+    }
+    
+    public void editarCategoria(int idCategoria, String nuevoNombre) throws SQLException {
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        
+        try {
+            // Establecer la conexión a la base de datos
+            conn = establecerConexion();
+            
+            // Consulta SQL para actualizar el nombre de la categoría
+            String sql = "UPDATE categorias SET categoria = ? WHERE idCategoria = ?";
+            
+            // Preparar la declaración SQL
+            stmt = conn.prepareStatement(sql);
+            
+            // Establecer los parámetros
+            stmt.setString(1, nuevoNombre);
+            stmt.setInt(2, idCategoria);
+            
+            // Ejecutar la actualización
+            int filasActualizadas = stmt.executeUpdate();
+            
+            // Verificar si se actualizó correctamente
+            if (filasActualizadas > 0) {
+                System.out.println("La categoría se actualizó correctamente.");
+            } else {
+                System.out.println("No se pudo actualizar la categoría.");
+            }
+        } catch (SQLException e) {
+            // Manejar cualquier error de SQL
+            e.printStackTrace();
         } finally {
             // Cerrar recursos
             if (stmt != null) {

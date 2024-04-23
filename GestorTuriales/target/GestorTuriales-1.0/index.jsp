@@ -73,6 +73,7 @@
             </div>
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-primary">Agregar</button>
+                <a text-align: center href="categorias.jsp">¿La categorías que buscas no esta? ¡Agregala! </a>
             </div>
         </form>
     </div>

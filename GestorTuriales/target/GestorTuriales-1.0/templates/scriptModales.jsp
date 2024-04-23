@@ -1,11 +1,10 @@
 <%-- 
     Document   : scriptModales
-    Created on : 17/04/2024, 8:26:20?a.?m.
-    Author     : Sistemas
-    Esta pagina no visible almacena modales y scripts a empleaser en listasT.jsp 
+    Esta pagina no visible almacena modales y scripts a emplearce en listasT.jsp 
 --%>
 
 <%@page import="umariana.gestorturiales.gestionarTutoriales"%>
+
 <script>
     function confirmarEliminacion(idTutorial) {
         var confirmacion = confirm("¿Está seguro de que desea borrar este tutorial?");
