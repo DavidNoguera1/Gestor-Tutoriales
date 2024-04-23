@@ -25,6 +25,7 @@ public class SvEditar extends HttpServlet {
 
     gestionarTutoriales gestionar = new gestionarTutoriales();
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // Obtener los parámetros de la solicitud HTTP
@@ -36,7 +37,7 @@ public class SvEditar extends HttpServlet {
             gestionar.editarCategoria(idCategoria, nuevoNombre);
 
             // Redirigir a la página de categorías después de la edición
-            response.sendRedirect(request.getContextPath() + "/categorias.jsp");
+            response.sendRedirect(request.getContextPath() + "/categorias.jsp?editSuccessC=true");
         } catch (SQLException e) {
             // Manejar cualquier error de SQL
             e.printStackTrace();
@@ -46,8 +47,7 @@ public class SvEditar extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String titulo = request.getParameter("titulo");
         int prioridad = Integer.parseInt(request.getParameter("prioridad"));
         String url = request.getParameter("url");
@@ -57,13 +57,10 @@ public class SvEditar extends HttpServlet {
         try {
             gestionar.editarTutorial(idTutorial, titulo, prioridad, url, categoria);
             // Redirigir a la página de éxito o mostrar un mensaje de éxito
-
-            response.sendRedirect(request.getContextPath() + "/listaT.jsp");
+            response.sendRedirect(request.getContextPath() + "/listaT.jsp?editSuccess=true");
 
             System.out.println("Tutorial editado exitosamente.");
-
         } catch (SQLException e) {
-
             // Manejar cualquier error de SQL
             e.printStackTrace(); // Esto imprimirá la traza de la excepción en la consola del servidor
             // Puedes manejar el error de otra manera, como mostrar un mensaje de error en la página

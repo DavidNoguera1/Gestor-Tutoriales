@@ -35,7 +35,7 @@ public class SvCategoria extends HttpServlet {
             gestionar.eliminarCategoria(idCategoria);
 
             // Redirigir a listaT.jsp después de eliminar el tutorial
-            response.sendRedirect(request.getContextPath() + "/categorias.jsp");
+            response.sendRedirect(request.getContextPath() + "/categorias.jsp?deleteSuccessC=true");
 
             System.out.println("Categoria eliminado exitosamente.");
         } catch (SQLException e) {
@@ -56,7 +56,7 @@ public class SvCategoria extends HttpServlet {
             gestionar.agregarCategoria(nuevaCategoria);
 
             // Redirigir a donde desees después de agregar la categoría
-            response.sendRedirect(request.getContextPath() + "/categorias.jsp");
+            response.sendRedirect(request.getContextPath() + "/categorias.jsp?successC=true");
 
             System.out.println("Categoría agregada exitosamente.");
         } catch (SQLException e) {

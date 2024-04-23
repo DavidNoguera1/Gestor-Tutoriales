@@ -12,8 +12,12 @@
 
 <%@include file= "templates/header.jsp" %>
 
+<div class="container text-center py-5">
+    <h2 class="mb-3">Explora nuestros <a href="listaT.jsp">tutoriales</a></h2>
+    <p class="lead">Descubre una amplia variedad de tutoriales en diferentes categorías. ¡Aprende y mejora tus habilidades!</p>
+</div>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
+<div class="container d-flex justify-content-center align-items-center py-5">
     <div class="card bg-dark text-light p-3">
         <h1 class="text-center">Formulario para agregar tutoriales</h1>
         <form action="${pageContext.request.contextPath}/SvAgregarTutorial" method="POST">
@@ -44,14 +48,14 @@
                 <label for="categoria" class="form-label text-light">Categoría</label>
                 <select name="categoria" class="form-select" id="categoria">
                     <%
-                        
+                            gestionarTutoriales gestionar = new gestionarTutoriales();
                             Connection conn = null;
                             PreparedStatement stmt = null;
                             ResultSet rs = null;
                         
                         try {
                             
-                            gestionarTutoriales gestionar = new gestionarTutoriales();
+                            
                             conn = gestionar.establecerConexion();
 
                             String sql = "SELECT idCategoria, categoria FROM categorias";
@@ -77,8 +81,6 @@
             </div>
         </form>
     </div>
-
 </div>
-
 
 <%@include file= "templates/footer.jsp" %>

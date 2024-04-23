@@ -33,6 +33,9 @@
     <div class="col-md-8">
         <table id="categoriasTable" class="table table-bordered table-dark table-sm text-center">
             <thead>
+                
+                <%@include file= "templates/alerts.jsp" %>
+                
                 <tr>
                     <th>ID</th>
                     <th>Categoría</th>

@@ -35,7 +35,7 @@ public class SvAgregarTutorial extends HttpServlet {
             gestionar.eliminarTutorial(idTutorial);
 
             // Redirigir a listaT.jsp después de eliminar el tutorial
-            response.sendRedirect(request.getContextPath() + "/listaT.jsp");
+            response.sendRedirect(request.getContextPath() + "/listaT.jsp?deleteSuccess=true");
 
             System.out.println("Tutorial eliminado exitosamente.");
         } catch (SQLException e) {
@@ -59,7 +59,7 @@ public class SvAgregarTutorial extends HttpServlet {
             gestionar.agregarTutorial(titulo, prioridad, url, categoria);
 
             // Redirigir a listaT.jsp después de agregar el tutorial
-            response.sendRedirect(request.getContextPath() + "/listaT.jsp");
+            response.sendRedirect(request.getContextPath() + "/listaT.jsp?success=true");
 
             System.out.println("Tutorial agregado exitosamente.");
         } catch (SQLException e) {

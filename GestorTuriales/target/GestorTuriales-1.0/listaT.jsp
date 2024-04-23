@@ -16,7 +16,7 @@
     <div class="col-md-8">
         <table id="tutorialesTable" class="table table-bordered table-dark">
             <thead>
-            
+
             <div class="input-group mb-3">
                 <div class="form-outline" data-mdb-input-init>
                     <input id="search-focus" type="search" id="form1" class="form-control" 
@@ -51,6 +51,7 @@
                 </div>
             </div>
 
+            <%@include file= "templates/alerts.jsp" %>
 
             <tr>
                 <th>ID</th>
@@ -94,7 +95,7 @@
                     <td><%= estado%></td>
                     <td><%= categoria%></td>
                     <td>
-                        
+
                         <div class="btn-group" role="group" aria-label="Acciones">
                             <!-- Botón de edición -->
                             <a href="#" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" title="Editar"
@@ -106,7 +107,7 @@
                                data-categoria="<%= categoria%>">
                                 <i class="fas fa-edit"></i> 
                             </a>
-                             <!-- Botón de borrado -->
+                            <!-- Botón de borrado -->
                             <a href="#" title="Eliminar" class="btn btn-danger btn-sm" onclick="confirmarEliminacion(<%= idTutorial%>)">
                                 <i class="fas fa-trash"></i> 
                             </a>
@@ -162,29 +163,36 @@
 </script>
 
 <script>
-    $(document).ready(function () {
-        // Manejar el cambio de opción en el select de categoría
-        $('#categoriaSelect').on('change', function () {
-            var categoriaId = $(this).val();
+    // Función para filtrar los tutoriales por categoría
+    function filtrarPorCategoria(categoriaSeleccionada) {
+        // Obtener todas las filas de la tabla que representan tutoriales
+        var filas = document.querySelectorAll("#tutorialesTable tbody tr:not(.no-data)");
 
-            // Mostrar todas las filas si la opción seleccionada es 0 (Todas las Categorías)
-            if (categoriaId === '0') {
-                $('tbody tr').show();
-                return;
+        // Iterar sobre las filas y mostrar u ocultar según la categoría seleccionada
+        filas.forEach(function (fila) {
+            var categoria = fila.querySelector("td:nth-child(6)").innerText.trim();
+            if (categoriaSeleccionada === "Todas las Categorías" || categoria === categoriaSeleccionada) {
+                fila.style.display = "table-row";
+            } else {
+                fila.style.display = "none";
             }
+        });
+    }
 
-            // Filtrar las filas de la tabla basándonos en la categoría seleccionada
-            $('tbody tr').each(function () {
-                var categoria = $(this).find('td:eq(5)').text(); // Cambiar el índice según la posición de la columna de categoría
-                if (categoria !== categoriaId) {
-                    $(this).hide();
-                } else {
-                    $(this).show();
-                }
-            });
+    // Obtener todos los elementos del menú desplegable
+    var opcionesCategoria = document.querySelectorAll(".dropdown-item[data-categoria]");
+
+    // Agregar un controlador de eventos clic a cada elemento del menú desplegable
+    opcionesCategoria.forEach(function (opcion) {
+        opcion.addEventListener("click", function () {
+            var categoriaSeleccionada = this.innerText.trim();
+            filtrarPorCategoria(categoriaSeleccionada);
         });
     });
 </script>
+
+
+
 
 
 <%@include file= "templates/scriptModales.jsp" %>
