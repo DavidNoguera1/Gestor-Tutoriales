@@ -20,9 +20,9 @@ import java.sql.SQLException;
 public class gestionarTutoriales {
 
     public Connection establecerConexion() {
-        String url = "jdbc:mysql://localhost:3306/gestor?serverTimeZone=utc";
+        String url = "jdbc:mysql://localhost:3308/gestor?serverTimeZone=utc";
         String user = "root"; // Nombre de usuario correcto
-        String password = "admin"; // Contraseña de tu base de datos, si la tienes
+        String password = ""; // Contraseña de tu base de datos, si la tienes
         Connection conn = null;
 
         try {
