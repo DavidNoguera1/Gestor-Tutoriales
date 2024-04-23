@@ -2,4 +2,5 @@ umariana\gestorturiales\gestionarTutoriales.class
 umariana\gestorturiales\JAXRSConfiguration.class
 servlets\SvCategoria.class
 servlets\SvAgregarTutorial.class
+servlets\SvEditar.class
 umariana\gestorturiales\resources\JavaEE8Resource.class

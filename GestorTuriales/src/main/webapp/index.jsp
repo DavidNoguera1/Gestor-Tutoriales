@@ -23,7 +23,7 @@
         <form action="${pageContext.request.contextPath}/SvAgregarTutorial" method="POST">
             <div class="mb-3">
                 <label for="titulo" class="form-label text-light">Título</label>
-                <input type="text" name="titulo" class="form-control" id="titulo">
+                <input type="text" name="titulo" class="form-control" id="titulo" required>
             </div>
             <div class="mb-3">
                 <label for="prioridad" class="form-label text-light">Prioridad</label>
@@ -42,7 +42,7 @@
             </div>
             <div class="mb-3">
                 <label for="url" class="form-label text-light">URL</label>
-                <input type="text" name="url" class="form-control" id="url">
+                <input type="text" name="url" class="form-control" id="url" required>
             </div>
             <div class="mb-3">
                 <label for="categoria" class="form-label text-light">Categoría</label>
